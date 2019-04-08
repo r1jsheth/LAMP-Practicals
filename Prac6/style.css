@@ -1,0 +1,23 @@
+h3{
+    font-family: Calibri; 
+    font-size: 25pt;         
+    font-style: normal; 
+    font-weight: bold; 
+    color:rgb(87, 62, 143);
+    text-align: center; 
+    text-decoration: underline;
+    
+}
+table{
+    font-family: Calibri; 
+    color:rgb(25, 0, 83); 
+    font-size: 11pt; 
+    font-style: normal;
+    font-weight: bold;
+    background-color: rgb(207, 199, 255);
+    border-collapse: collapse; 
+    border-radius: 2%;
+}
+.error {
+    color: #FF0000;
+  }
