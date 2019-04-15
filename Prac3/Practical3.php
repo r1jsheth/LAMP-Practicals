@@ -1,3 +1,17 @@
+<!--
+    Write a PHP script for the following: 
+      Design a form to accept two strings
+      from the user. Find the first occurrence and the last occurrence of the small
+      string in the large string. Also count the total number of occurrences of
+      small string in the large string. Provide a text box to accept a string, which
+      will replace the small string in the large string. 
+      (Use built-in functions and make user define function as well)
+        
+    Author: Raj
+    Date Created: 2019-02-01 09:39:01
+-->
+
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
