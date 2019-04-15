@@ -1,3 +1,11 @@
+<!--
+    (A) Create a customer registration form for bank. Validate the form using PHP
+        validators and display error messages.
+        
+        Author: Raj
+        Date Created: 2019-03-12 02:01:54
+-->
+
 <?php
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
