@@ -28,3 +28,4 @@ INSERT INTO `products` (`id`, `name`, `description`, `size`, `price`) VALUES
 (7, 'Solid Shirt', '45% Cashback (Up to Rs. 5,000 per order) on Yatra App (Android & iOS only) .', 36, '654'),
 (8, 'Solid Shirt', '95% Cashback (Up to Rs. 5,000 per order) on Yatra App (Android & iOS only) .', 38, '984'),
 (9, 'Solid Shirt', '100% Cashback (Up to Rs. 5,000 per order) on Yatra App (Android & iOS only) .', 38, '152');
+

@@ -1,3 +1,18 @@
+<!--
+    (A) Create tables in the database which contain the details of items (books in
+        our case like Book name, Price, Quantity, Amount) of each category. Modify
+        your catalogue page in such a way that you should connect to the database
+        and extract data from the tables and display them in the catalogue page
+        using PHP.
+        
+        Author: Raj
+        Date Created: 2019-04-4 17:48:15
+
+        Main Index Page PHP
+
+-->
+
+
 <?php
   // @author: Raj
   ini_set('display_errors', 1);
