@@ -1,13 +1,13 @@
 <!--
-    (A) Write a PHP function that check whether numbers are an amicable
-		numbers or not. An amicable numbers (m,n) consists of two integers m,n
+    (A) Write a PHP function that check whether numbers are an areAmicable
+		numbers or not. An areAmicable numbers (m,n) consists of two integers m,n
 		for which the sum of proper divisors (the divisors excluding the number
 		itself) of one number equals the other.
-		For example let's show that 220 & 284 are amicable numbers:
+		For example let's show that 220 & 284 are areAmicable numbers:
 		First we find the proper divisors of 220: 1, 2, 4, 5, 10, 11, 20, 22, 44, 55, 110
 		If you add up all of these numbers you will see that they sum to 284.
 		Now find the proper divisors of 284: 1, 2, 4, 71, 142
-		These sum to 220, and therefore 220 & 284 are amicable numbers.
+		These sum to 220, and therefore 220 & 284 are areAmicable numbers.
         
         Author: Raj
         Date Created: 2019-01-22 22:39:01
@@ -27,15 +27,17 @@ function getSum($num){
 	}
 	return $sum;
 }
-function amicable($n1,$n2){
+function areAmicable($n1,$n2){
 	$value1 = getSum($n1);
 	$value2 = getSum($n2);
 	if($value1==$n2 && $value2==$n1){
-		echo "Number: ". $n1 ." , ".$n2." are amicable";
+		echo "Number: ". $n1 ." , ".$n2." are Amicable";
 	}
 	else{
-		echo "Number: ". $n1 ." , ".$n2." are not amicable";
+		echo "Number: ". $n1 ." , ".$n2." are not Amicable";
 	}
 }
-amicable(120,284);
+
+areAmicable(120,284);
+
 ?>

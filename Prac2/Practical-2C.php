@@ -13,7 +13,7 @@
 
 
 <?php
-function special($i){
+function isSpecial($i){
 	echo "number ".$i." is ";	
 	$sum=0;
 	$multiplication=1;
@@ -32,5 +32,5 @@ function special($i){
 	else
 		echo "Not Special";
 }
-special(59);
+isSpecial(59);
 ?>
