@@ -1,3 +1,14 @@
+<!--
+    (B) Write a PHP function to check whether number is Automorphic
+		Number or not. Automorphic numbers are numbers of "n" digits whose
+		squares end in the number itself. For instance, the square of 1 is 1; the square
+		of 5 is 25; the square of 6 is 36;the square of 25 if 625
+		
+		Author: Raj
+        Date Created: 2019-01-22 12:39:01
+
+-->
+
 <?php
 	function automorphic($i){
 		echo "number = ".$i;

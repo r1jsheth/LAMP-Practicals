@@ -1,4 +1,12 @@
 <!DOCTYPE html>
+<!--
+    (A) Design your personal profile web page, which contains all your
+        personal, academic, co-curricular information, using basic concept of
+        HTML, CSS and JavaScript.
+        
+        Author: Raj
+        Date Created: 2019-01-15 22:39:01
+-->
 <html>
 <head>
 	<title></title>
@@ -11,7 +19,7 @@
 <div class="stuff">
   <br><br>
   <h1>Resume</h1>
-  <div><h2>Donald Trump</h2></div>
+  <div><h2>Ronald Rumpt</h2></div>
   <hr />
   <br>
   <p class="head">Interests</p>
@@ -24,17 +32,17 @@
   <br>
   <p class="head">Achievements</p>
   <ul>
-    <li>Met Vladimir Putin several times</li>
-    <li>Met Kim Jong-un ONCE</li>
+    <li>Met Dalvimir Tupin several times</li>
+    <li>Met Jon-Kim Un ONCE</li>
   </ul>
   <br>
   <p class="head">Education</p>
   <ul><u>
-    <a href="https://www.stanford.edu/">
-      <li>Stanford</li>
+    <a href="https://www.fantsord.edu/">
+      <li>Fantsord</li>
     </a>
-    <a href="https://www.princeton.edu/">
-      <li>Princeton</li></u>
+    <a href="https://www.kignston.edu/">
+      <li>Kignston</li></u>
     </a>
   </ul>
   <br>

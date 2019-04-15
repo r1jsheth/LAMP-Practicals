@@ -6,6 +6,8 @@
     $sql="SELECT * FROM products";
     extract($_POST);
 
+    
+
     if(empty($low)){
         $query1 = "SELECT MIN(price) FROM products";
         $result = mysqli_query($db,$query1) or die(mysqli_error()); 
@@ -32,13 +34,14 @@
         $sql.=" WHERE gender = '$gender'
                 AND price >= $low and price <= $high";
     }
+    echo "<h1>$sql</h1>";
     $all_row=$db->query($sql);
     
 ?>
 <?php if(isset($all_row) && is_object($all_row) && count($all_row)): $i=1;?>
     <?php foreach ($all_row as $key => $product) { ?>
     <div class="col-sm-3 ">		
-    	<div class="well">
+    	<div class="well"pp>
     		<h3 class="text-info"><?php echo $product['name']; ?></h3>
     		<p>Size : <?php echo $product['size']; ?></p> 
             <p>For : <?php echo ucfirst($product['gender']); ?></p>          		         
@@ -51,4 +54,16 @@
     </div>
    <?php } ?>
 <?php endif; ?>
+
+
+
+
+
+
+
+
+
+
+
+
    
