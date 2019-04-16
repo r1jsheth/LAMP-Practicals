@@ -1,10 +1,10 @@
 <!--
     (B) Write a menu driven program to perform the following stack and queue
-				related operations:
-				[Hint: use Array_push(), Array_pop(), Array_shift(), array_unshift() functions]
-				iv. Insert an element in queue
-				v. Delete an element from queue
-				vi. Display the contents of queue
+		related operations:
+		[Hint: use Array_push(), Array_pop(), Array_shift(), array_unshift() functions]
+			iv. Insert an element in queue
+			v. Delete an element from queue
+			vi. Display the contents of queue
         
         Author: Raj
         Date Created: 2019-02-08 10:29:01
@@ -19,7 +19,7 @@
   <body>
   	<?php
   		ini_set('display_errors', 1);
-			error_reporting(E_ALL);
+		error_reporting(E_ALL);
      	session_start();
   	?>
     <form action="#" method="post">
@@ -34,7 +34,9 @@
 	<?php
 		function newSession(){
 		  	$_SESSION['arr'] = array();
-		  	$_SESSION['expire'] = time()+2000;
+		  	// Session variables expires after 20 seconds
+		  	$expiringTime = 2000;
+		  	$_SESSION['expire'] = time()+$expiringTime;
 		}
 		function isExpired(){
 			if(isset($_SESSION['expire'])){

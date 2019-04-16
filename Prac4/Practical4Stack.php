@@ -34,7 +34,9 @@
 	<?php
 		function newSession(){
 		  	$_SESSION['arr'] = array();
-		  	$_SESSION['expire'] = time()+5;
+		  	// Session variables expires after 20 seconds
+		  	$expiringTime = 2000;
+		  	$_SESSION['expire'] = time()+$expiringTime;
 		}
 		function isExpired(){
 			if(isset($_SESSION['expire'])){
