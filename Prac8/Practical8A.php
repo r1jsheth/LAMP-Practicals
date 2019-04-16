@@ -15,19 +15,24 @@
 
     if(isset($_COOKIE['dateVal'])){
         $cookieData = $_COOKIE['dateVal'];
-        echo "<br> Hello! Last visted date: " . $cookieData . "<br>";
+        echo "<br> Hello! Last Visit:<br>" . $cookieData . "<br>";
     }
     else{
         echo "You're visiting first time!";
     }
-    $curDate = getdate();
-    $dd = $curDate['mday'];
-    $mm = $curDate['mon'];
-    $yy =  $curDate['year'];
-    $HH = $curDate['hours'];
-    $MM = $curDate['minutes'];
-    $SS = $curDate['minutes'];
-    $datestring = "$dd - $mm - $yy and $HH:$MM:$SS"; 
+
+    // Returns an associative array containing the date information of the timestamp, 
+    // or the current local time if no timestamp is given.
+    // function getdate ($timestamp = null) {}
+    // Get date/time information
+    $cookieDate = getdate();
+    $dd = $cookieDate['mday'];
+    $mm = $cookieDate['mon'];
+    $yy =  $cookieDate['year'];
+    $HH = $cookieDate['hours'];
+    $MM = $cookieDate['minutes'];
+    $SS = $cookieDate['seconds'];
+    $datestring = "<b>Date:</b> $dd - $mm - $yy <br><b>Time</b>: $HH : $MM : $SS <br>"; 
     
     // cookie expires after 30 seconds bcz time() measures time in seconds
     setcookie("dateVal", $datestring, time() + (30));
