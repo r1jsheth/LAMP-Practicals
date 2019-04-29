@@ -14,19 +14,19 @@
 
 <?php
 function isSpecial($i){
-	echo "number ".$i." is ";	
-	$sum=0;
-	$multiplication=1;
-	$t=$i;
-	$final=0;
+	echo "Input Number " . $i . " is ";	
+	$sum = 0;
+	$multiplication = 1;
+	$t = $i;
+	$final = 0;
 	$digit;
-	while($i>=1){
-		$digit=($i)%10;	
-		$sum+=$digit;
-		$multiplication=($digit)*($multiplication);
-		$i=(int)($i)/10;
+	while($i >= 1){
+		$digit = ($i)%10;	
+		$sum += $digit;
+		$multiplication = ($digit)*($multiplication);
+		$i = (int)($i)/10;
 	}
-	if ($sum+$multiplication == $t) {
+	if ($sum + $multiplication === $t) {
 		echo "Special";
 	}
 	else

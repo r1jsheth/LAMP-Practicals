@@ -1,13 +1,13 @@
 <!--
-    (B) Write a menu driven program to perform the following stack and queue
+	(B) Write a menu driven program to perform the following stack and queue
 		related operations:
-		[Hint: use Array_push(), Array_pop(), Array_shift(), array_unshift() functions]
+		[Hint: use array_push(), array_pop(), array_shift(), array_unshift() functions]
 			iv. Insert an element in queue
 			v. Delete an element from queue
 			vi. Display the contents of queue
-        
-        Author: Raj
-        Date Created: 2019-02-08 10:29:01
+
+		Author: Raj
+		Date Created: 2019-02-08 10:29:01
 -->
 
 <!DOCTYPE html>

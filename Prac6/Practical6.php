@@ -78,10 +78,6 @@ error_reporting(E_ALL);
             $year = $_POST['Year'];
         }
         else $fl = 1;
-
-
-
- 
     }
     function ContainsNumbers($String){
         return preg_match('/\\d/', $String) > 0;

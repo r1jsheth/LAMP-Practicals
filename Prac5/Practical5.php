@@ -8,11 +8,6 @@
         Author: Raj
         Date Created: 2019-04-15 22:39:01
 -->
-
-
-
-
-
 <!DOCTYPE html>
 <?php
 	ini_set('display_errors', 1);
