@@ -23,13 +23,14 @@
 <html>
 
 <head>
-	<title>Practical 10 16BIT031</title>
+	<title>Client 16BIT031</title>
 </head>
 
 <body>
+<h1>Client</h1>
 <?php
     $host    = "127.0.0.1";
-    $port    = 25951;
+    $port    =  26104;
     $numAsked = 5;
     echo "Factorial of Number = ".$numAsked;
     

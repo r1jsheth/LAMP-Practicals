@@ -23,10 +23,12 @@
 <html>
 
 <head>
-	<title>Practical 10 16BIT031</title>
+	<title>Server 16BIT031</title>
 </head>
 
 <body>
+
+<h1>Server </h1>
 <?php
 
     function findFactorial($num){
@@ -43,7 +45,7 @@
 
     // set some variables
     $host = "127.0.0.1";
-    $port = 25951;
+    $port = 26104;
     
     // 0 suggests infinte time: don't timeout!
     set_time_limit(0);
