@@ -12,7 +12,7 @@
 
     // Uncomment the following line to see 'all stored cookies in the browser'
     // print_r($_COOKIE);
-
+    // echo "</br>";
     if(isset($_COOKIE['dateVal'])){
         $cookieData = $_COOKIE['dateVal'];
         echo "<br> Hello! Last Visit:<br>" . $cookieData . "<br>";
