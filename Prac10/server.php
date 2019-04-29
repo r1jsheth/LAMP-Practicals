@@ -41,14 +41,14 @@
 
     // SERVER Side Code
     echo "Sever:" . "</br>";
-        
+    
 
     // set some variables
     $host = "127.0.0.1";
     $port = 26104;
     
     // 0 suggests infinte time: don't timeout!
-    set_time_limit(0);
+    set_time_limit(30);
     
     
     // create socket
