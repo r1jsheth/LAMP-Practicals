@@ -20,15 +20,18 @@
     $allowedExts = array("png", "jpg", "jpeg", "bmp", "pdf");
     
     $tarDir = $DirPath;
+
+    // print_r($_FILES['fileToUpload']);
     $tarFile = $tarDir . basename($_FILES["fileToUpload"]["name"]);
     $uploadOk = 1;
-    $imageFileType = strtolower(pathinfo($tarFile,PATHINFO_EXTENSION));
-
+    $inputFileType = strtolower(pathinfo($tarFile,PATHINFO_EXTENSION));
+    // print_r($inputFileType);
+    
 
     // Allow certain file formats only
     $count = 0;
     foreach ($allowedExts as $ext){
-        if($imageFileType == $ext){
+        if($inputFileType == $ext){
             $count++;
             break;
         }
@@ -36,7 +39,7 @@
     if($count == 0){
     	// This will happen if file is not falling in any of the allowed file formats.
         echo "<font color = 'red'>";
-        echo "<b>".$imageFileType."</b>";
+        echo "<b>".$inputFileType."</b>";
         echo " not supported as of now!";
         echo "<br>Allowed extensions are: ";
         for ($i = 0; $i < sizeof($allowedExts); $i++) { 
