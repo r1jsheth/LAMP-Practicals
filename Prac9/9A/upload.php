@@ -10,6 +10,8 @@
     // in order to use this mkdir() function of php
     // If on Linux, 'chown' and 'chmod' will do the needful.
     // Simply give path to the directory where you are going to upload files.
+    
+
     $DirPath = '/var/www/html/Lab/Prac9/UserData/';
     if (!file_exists($DirPath)) {
         mkdir($DirPath, 755, true);
@@ -22,13 +24,16 @@
     $tarDir = $DirPath;
 
     // print_r($_FILES['fileToUpload']);
+    
     $tarFile = $tarDir . basename($_FILES["fileToUpload"]["name"]);
-    $uploadOk = 1;
+    
+    // Flag Variable, 1 assumes we are able to upload file
+    $uploadOk = 1; 
+    
+    // extracts extension from target File
     $inputFileType = strtolower(pathinfo($tarFile,PATHINFO_EXTENSION));
     // print_r($inputFileType);
     
-    
-
     // Allow certain file formats only
    	if(!in_array($inputFileType, $allowedExts)){
     	echo "<font color = 'red'>";
