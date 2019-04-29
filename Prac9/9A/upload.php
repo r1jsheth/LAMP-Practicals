@@ -27,18 +27,11 @@
     $inputFileType = strtolower(pathinfo($tarFile,PATHINFO_EXTENSION));
     // print_r($inputFileType);
     
+    
 
     // Allow certain file formats only
-    $count = 0;
-    foreach ($allowedExts as $ext){
-        if($inputFileType == $ext){
-            $count++;
-            break;
-        }
-    }
-    if($count == 0){
-    	// This will happen if file is not falling in any of the allowed file formats.
-        echo "<font color = 'red'>";
+   	if(!in_array($inputFileType, $allowedExts)){
+    	echo "<font color = 'red'>";
         echo "<b>".$inputFileType."</b>";
         echo " not supported as of now!";
         echo "<br>Allowed extensions are: ";
@@ -49,8 +42,7 @@
         echo "</font>";
         exit(-1);
     }
-
-
+    
     // Check if file already exists
     // We can't override the existing file with the same name
     if (file_exists($tarFile)) {
